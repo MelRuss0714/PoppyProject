@@ -1,0 +1,64 @@
+body{
+    background-image: url("https://d2d00szk9na1qq.cloudfront.net/Product/35905ae4-a643-41c9-ac18-eaee98e192bf/Images/Large_CO-282.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+#main {
+    background-color:#ffffff;
+    margin-top: 50px;
+}
+h1 {
+    font-family: 'Carter One', cursive;
+    color: #8ec97f;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+h4 {
+    font-family: 'Carter One', cursive;
+    color: #9ee28d;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+p {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+#result {
+    padding: 0px 0px 0px 40px;
+}
+#gamePlay {
+    padding: 0px 40px 0px 0px;
+}
+img{
+    
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #8ec97f;
+    border-radius: 5%;
+}
+@media only screen and (max-width: 768px){
+body{
+    background-image: url("https://i.pinimg.com/736x/6d/b8/79/6db879dd84c0f0ead032170865abe273--harry-potter-wallpaper-wallpaper-pictures.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+}h1 {
+    font-family: 'Carter One', cursive;
+    color: #000000;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+h4 {
+    font-family: 'Carter One', cursive;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+p {
+    font-family: 'Carter One', cursive;
+    color: #000000;
+    text-align: center;
+}
+}

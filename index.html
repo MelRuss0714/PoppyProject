@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poppy Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <h1>Poppy Words</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <h4>All of Poppy's Favorites</h4>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div id="result" class="col-lg-6 col-md-6 col-xs-12">
+                <div class="row">
+                    <div id ="picture" class="col-lg-12 col-md-12 col-xs-12">
+                        <img  src="assets/images/Poppy.JPG" alt="Poppy" 
+                        />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <p id="trivia">Press "New Game" to begin. Then type letters to guess the words. You have 10 guesses so be careful and Have Fun!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gamePlay" class="col-lg-6 col-md-6 col-xs-12">
+                <div class="row">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <p id="placeholder">Word: </p>
+                        <p> Number of guesses: </p>
+                        <p id="guess-left"></p>
+                        <p> Letters already guessed.</p>
+                        <p id="guess-letter"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <p id="directions">Press
+                    <button id="new-game-button">NewGame</button>
+                    to begin!</p>
+                <p id="wins">Wins: 0</p>
+                <p id="losses">Losses: 0</p>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
