@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //Create Varibles for game ( word bank, wins, loses, picked word, guesses left, game running, answer array, letters picked answer bank, incorrect letters bank )
-    var wordbank = ["Question","Cheverolet", "Yosemite", "Puns", "Bokeh", "Beav", "Melinda", "Jennifer", "Rhodonna", "Jackson", "Lydia", "Ethan"];
+    var wordbank = ["Question", "Cheverolet", "Yosemite", "Puns", "Bokeh", "Beav", "Melinda", "Jennifer", "Rhodonna", "Jackson", "Lydia", "Ethan"];
     var wins = 0;
     var losses = 0;
     var guessesLeft = 10;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var guessLetter = [];
     var wrongLetter = [];
     var sound;
-
+   
 
     //Create a new game function to reset all stats and pick a new word and create placeholders
     function newGame() {
@@ -51,9 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
         $placeholder.textContent = "Word: " + answerArray.join(" ");
         $guessLetter.textContent = wrongLetter;
         changeTrivia();
+        $("#letter").focus();
+
     }
+
+
     //Letter guess function takes in the letter you guesses and sees if it's in the selected word
-    function letterGuess(letter) {
+    $("#enter").on("click", function (event) {
+        event.preventDefault();
+       
+        letter = $("#letter").val().trim();
+        $("#input").html('<input type="text"  id="letter" maxlength="1" placeholder="Enter Letter Here">');
+        $("#letter").focus();
         if (gameRunning === true && guessLetter.indexOf(letter) === -1) {
             //Run Game Logic
             guessLetter.push(letter);
@@ -75,7 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Try a new letter.");
             }
         }
-    }
+       
+    });
+
+   
 
     //check incorrect(letter)
     function checkWrong(letter) {
@@ -237,13 +249,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $newGameButton.addEventListener("click", newGame);
     //Add onkey up event to trigger letter guess
 
-    document.onkeyup = function (event) {
-        if (event.keyCode >= 65 && event.keyCode <= 90) {
-            letterGuess(event.key);
-
-        }
-
-    }
 
 
 

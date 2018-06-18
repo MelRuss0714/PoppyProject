@@ -24,6 +24,20 @@ p {
     font-family: 'Carter One', cursive;
     text-align: center;
 }
+#letter {
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enter {
+    font-family: 'Carter One', cursive;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+}
 #result {
     padding: 0px 0px 0px 40px;
 }
